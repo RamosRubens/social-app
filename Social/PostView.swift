@@ -15,11 +15,18 @@ struct PostView: View {
     var viewModel: PostViewModel
         
     var body: some View {
+        GeometryReader{ geometry in
         Group {
             if viewModel.isLoading {
                 showLoading()
             } else {
                 HStack {
+                    AsyncImage(url: self.url, placeholder: {
+                        ProgressView()
+                            .frame(width: 80, height: 80, alignment: .center)
+                    })
+                    .frame(width: 40, height: 40, alignment: .center)
+                    
                     NavigationLink(destination: GridUsersImageView(viewModel: GridUsersImageViewModel(user: user))) {
                         Text("Albuns")
                     }
@@ -36,6 +43,7 @@ struct PostView: View {
                         }
                     }
                 }
+            }
             }
         }
         .onAppear {

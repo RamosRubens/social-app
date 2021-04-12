@@ -11,6 +11,8 @@
 		25FD24FF2624AD1A0081978E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FD24FE2624AD1A0081978E /* Post.swift */; };
 		25FD25012624AF500081978E /* ImagemUsuarioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FD25002624AF500081978E /* ImagemUsuarioViewModel.swift */; };
 		25FD25052624BA6B0081978E /* FotosUsuarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FD25042624BA6B0081978E /* FotosUsuarioView.swift */; };
+		25FD25072624C56D0081978E /* ImagemLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FD25062624C56D0081978E /* ImagemLoader.swift */; };
+		25FD250B2624C83A0081978E /* CadastroNovoUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FD250A2624C83A0081978E /* CadastroNovoUsuario.swift */; };
 		EB5F4077261BCB0200437217 /* SocialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F4076261BCB0200437217 /* SocialApp.swift */; };
 		EB5F4079261BCB0200437217 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F4078261BCB0200437217 /* ContentView.swift */; };
 		EB5F407B261BCB0400437217 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5F407A261BCB0400437217 /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 		25FD24FE2624AD1A0081978E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		25FD25002624AF500081978E /* ImagemUsuarioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagemUsuarioViewModel.swift; sourceTree = "<group>"; };
 		25FD25042624BA6B0081978E /* FotosUsuarioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotosUsuarioView.swift; sourceTree = "<group>"; };
+		25FD25062624C56D0081978E /* ImagemLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagemLoader.swift; sourceTree = "<group>"; };
+		25FD250A2624C83A0081978E /* CadastroNovoUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroNovoUsuario.swift; sourceTree = "<group>"; };
 		EB5F4073261BCB0200437217 /* Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Social.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB5F4076261BCB0200437217 /* SocialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialApp.swift; sourceTree = "<group>"; };
 		EB5F4078261BCB0200437217 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				EB5F4093261BE37700437217 /* ObservableObject+Utils.swift */,
 				EB5F4096261BE6AE00437217 /* PostView.swift */,
 				25FD25042624BA6B0081978E /* FotosUsuarioView.swift */,
+				25FD25062624C56D0081978E /* ImagemLoader.swift */,
+				25FD250A2624C83A0081978E /* CadastroNovoUsuario.swift */,
 			);
 			path = Social;
 			sourceTree = "<group>";
@@ -191,8 +197,10 @@
 				25FD25052624BA6B0081978E /* FotosUsuarioView.swift in Sources */,
 				EB5F4077261BCB0200437217 /* SocialApp.swift in Sources */,
 				25FD25012624AF500081978E /* ImagemUsuarioViewModel.swift in Sources */,
+				25FD250B2624C83A0081978E /* CadastroNovoUsuario.swift in Sources */,
 				EB5F4089261BCC6600437217 /* User.swift in Sources */,
 				EB5F4091261BE28800437217 /* URLSession+Utils.swift in Sources */,
+				25FD25072624C56D0081978E /* ImagemLoader.swift in Sources */,
 				EB5F4094261BE37700437217 /* ObservableObject+Utils.swift in Sources */,
 				25FD24FD2624ACFD0081978E /* ImagemUsuario.swift in Sources */,
 				25FD24FF2624AD1A0081978E /* Post.swift in Sources */,

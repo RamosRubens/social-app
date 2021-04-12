@@ -48,12 +48,6 @@ class UserViewModel: ObservableObject {
     func registerUsers(user: User){
         usersCancellationToken?.cancel()
         
-        if let url = URL(string: "\(kBaseURL)/users"){
-            let session = URLSession.shared
-            let request = URLRequest(url: url).httpMethod(HttpMethod.POST)
-            loading = true
-        }
-        
     }
     
     func fetchUsers() {
