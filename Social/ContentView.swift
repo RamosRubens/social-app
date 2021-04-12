@@ -41,7 +41,7 @@ struct ContentView: View {
     private func showLoading() -> some View {
         return VStack {
             ProgressView()
-            Text("Aguarde! Carregando..")
+            Text("Carregando")
         }
     }
     

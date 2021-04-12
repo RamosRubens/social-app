@@ -26,9 +26,6 @@ class UserViewModel: ObservableObject {
     }
     private var usersCancellationToken: AnyCancellable?
     
-    
-    
-    
     func newFetchUsers() {
         usersCancellationToken?.cancel()
         
@@ -48,13 +45,24 @@ class UserViewModel: ObservableObject {
         }
     }
     
+    func registerUsers(user: User){
+        usersCancellationToken?.cancel()
+        
+        if let url = URL(string: "\(kBaseURL)/users"){
+            let session = URLSession.shared
+            let request = URLRequest(url: url).httpMethod(HttpMethod.POST)
+            loading = true
+        }
+        
+    }
+    
     func fetchUsers() {
         // Main Queue
         // Grand Central Dispatch (GCD)
         
         let session = URLSession.shared
         
-        if let url = URL(string: "https://jsonplaceholder.typicode.com/users") {
+        if let url = URL(string: "\(kBaseURL)/users") {
             let task = session.dataTask(with: url) { (data, response, error) in
                 if let resp = response as? HTTPURLResponse,
                    resp.statusCode >= 200,
